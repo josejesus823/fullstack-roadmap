@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <form action="test.html" target="_blank">
+  <form action="test.html" target="_blank" method="post">
     <p>
       <label for="name">Name:</label>
       <input type="text" pattern="[A-Za-z]+" title="Only alphabetic characters allowed" id="name" maxlength="40"
@@ -23,7 +23,7 @@
 
     <p>
       <label for="telephone">Telephone:</label>
-      <input type="text" pattern="[0-9]+" title="Only numeric characters allowed" id="telephone" required />
+      <input type="tel" pattern="[0-9]+" title="Only numeric characters allowed" id="telephone" required />
     </p>
 
     <p>
@@ -33,7 +33,7 @@
 
     <p>
       <label for="email">Email:</label>
-      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" id="email" required />
     </p>
 
     <p>
@@ -42,13 +42,16 @@
         title="Please enter a valid format (https://www.linkedin.com/in/username)" id="linkedIn_url" />
     </p>
 
-    <p>Gender:
+    <fieldset>
+      <legend>Gender:</legend>
+    <p>
+      <input type="radio" name="gender" required>
       <label for="gender"> Male</label>
-      <input type="radio" name="gender" required>
 
-      <label for="gender"> Female</label>
       <input type="radio" name="gender" required>
+       <label for="gender"> Female</label>
     </p>
+    </fieldset>
 
 
     <p class="button">
@@ -56,8 +59,8 @@
       <button type="reset">Clear all fields</button>
     </p>
   </form>
-  </form>
 </body>
 
 
 </html>
+
