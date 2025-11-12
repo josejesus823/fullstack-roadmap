@@ -35,3 +35,9 @@ El nuevo elemento o el ultimo pasa a ser un mark verde con el texto subrayado
 20. Al elemento mark agregar el texto obtenido en el paso 18
 21. En la posicion de ese mismo elemento sin mark, la remplazamos por el nuevo del paso 20
 22. Definimos los estilos para todos los li que no sean el ultimo 
+
+
+
+## VIDEO
+
+[text](https://streamable.com/8o798d)
