@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        mark{
+            background-color: rgb(11, 228, 58);
+            text-decoration: underline;
+            /* text-decoration: line-through; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>
+        Tasks
+    </h2>
+    <ol>
+        <li>wake up</li>
+    </ol>
+    <input type="text" id="task">
+    <button id="add__task__button">Add Task</button>
+    <script>
+        let getOlElement = document.querySelector('body').querySelector('ol')
+        let getLiElements = document.querySelector('body').querySelector('ol').children
+        let myInput = document.getElementById('task');
+
+        const myButton = document.getElementById('add__task__button');
+        myButton.addEventListener('click', function () {
+            const getInputValue = myInput.value;
+            if (getInputValue !== "") {
+                const markElement = document.createElement('mark'); 
+                const newLi = document.createElement('li');
+                markElement.textContent = getInputValue;
+                newLi.appendChild(markElement);
+                getOlElement.appendChild(newLi);
+
+                myInput.value = "";
+                for(let i = 0; i < getLiElements.length - 1; i++){
+                    let mark = getLiElements[i].querySelector('mark');
+                    if(!mark){
+                        const text = getLiElements[i].textContent;
+                        const newMark = document.createElement('mark');
+                        newMark.textContent = text;
+                        getLiElements[i].replaceChildren(newMark);
+                        mark = newMark
+                    }
+                    mark.style.backgroundColor = 'rgb(224, 107, 107)';
+                    mark.style.textDecoration = 'line-through';
+                }
+
+            }
+            else {
+                console.log("el input esta vacio")
+            }
+        })
+    </script>
+</body>
+
+</html>
