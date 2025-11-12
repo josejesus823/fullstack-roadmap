@@ -40,4 +40,5 @@ El nuevo elemento o el ultimo pasa a ser un mark verde con el texto subrayado
 
 ## VIDEO
 
-[text](https://streamable.com/8o798d)
+
+https://streamable.com/8o798d
