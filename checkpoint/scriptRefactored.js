@@ -37,7 +37,7 @@ createForm.addEventListener('click', function () {
 
     }
     else {
-        alert("Pleas fill all inputs");
+        alert("Please complete all inputs");
     }
 
 })
