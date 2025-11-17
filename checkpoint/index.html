@@ -10,7 +10,7 @@
 
 <body>
   <nav class="top-nav">
-    writings.dev
+    <span class="top-nav-logo">writings.dev</span>
     <ul>
       <li><a href="#">categories</a></li>
       <li><a href="#">articles</a></li>
@@ -225,9 +225,6 @@
         <p class="article-area">DevOps</p>
       </footer>
     </article>
-
-
-
   </main>
 
   <template id="article-template">
@@ -237,12 +234,15 @@
       <p class="article-description"></p>
       <footer class="article-footer">
         <p class="article-date"></p>
+        <p class="article-point"> • </p>
         <p class="article-area"></p>
       </footer>
     </article>
   </template>
 
-  <form action="">
+  <hr class="full-line">
+
+  <form action="" class="form-style">
     <p>
       <label for="image_url">Image URL</label>
       <input type="url" id="image_url" required>
@@ -285,7 +285,6 @@
       Follow @writingsdev
     </button>
   </footer>
-  Agregar un formulario que permita agregar: titulo, descripcion, imagenurl, fecha, area
   <script src="scriptRefactored.js"></script>
 </body>
 
