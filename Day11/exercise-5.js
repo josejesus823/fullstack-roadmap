@@ -10,8 +10,8 @@ function capitalizeEachWord(str){
         let upperCapitalizeWord = '';
         for (let char of listWord){
             const upperLetter = char[0].toUpperCase();
-            let a = upperLetter + char.substring(1).toString();
-            upperCapitalizeWord += a + " ";
+            let newWordWithLetterCapitalized = upperLetter + char.substring(1);
+            upperCapitalizeWord += newWordWithLetterCapitalized + " ";
         }
         return upperCapitalizeWord.trim();
     }
