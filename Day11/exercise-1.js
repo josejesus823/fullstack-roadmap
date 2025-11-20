@@ -1,7 +1,7 @@
 // create a function that given an string as a parameter returns how many vowels the string had.
 const vowels = ['a','e','i','o','u'];
 let count = 0;
-function repeatVowels(str){
+function countVowels(str){
     lowerCaseWord = str.toLowerCase();
     for(let i = 0; i < lowerCaseWord.length; i++){
         if(vowels.includes(lowerCaseWord[i])){
@@ -10,4 +10,4 @@ function repeatVowels(str){
     }
     return `Your word: ${str} has: ${count} vowels`;
 }
-console.log(repeatVowels("murcielago"));
+console.log(countVowels("murcielago"));
