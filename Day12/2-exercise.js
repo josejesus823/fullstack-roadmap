@@ -13,7 +13,7 @@ const user = {
 function removePropertyFromObject(object, str){
     if(Object.keys(object).includes(str)){
         delete object[str]
-        return `Property ${str} deleted : ${Object.keys(object)}`
+        return object
     }
     else {
         return `The property ${str} doesn't exist in the object ${Object.keys(object)}`;
