@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="first_number">1st Number</label>
+      <input type="number" id="first_number" />
+      <label for="second_number">2nd Number :</label>
+      <input type="number" id="second_number" />
+      <button onclick="multiply()" type="button">Multiply</button>
+      <button onclick="divide()" type="button">Divide</button>
+
+      <p>The result is : <span id="result"></span> </p>
+    </form>
+
+    <script>
+/*10. Multiplication and Division (User Input)
+Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
+*/
+      function multiply() {
+        
+        const getFirstNumberValue = document.querySelector("#first_number").value;
+        const getSecondNumberValue = document.querySelector("#second_number").value;
+
+        const result = getFirstNumberValue * getSecondNumberValue;
+        document.querySelector("#result").value = "";
+        document.querySelector("#result").textContent = result;
+        document.querySelector("#first_number").value = "";
+        document.querySelector("#second_number").value = "";
+      }
+
+      function divide() {
+        document.querySelector("#result").value = "";
+        const getFirstNumberValue = document.querySelector("#first_number").value;
+        const getSecondNumberValue = document.querySelector("#second_number").value;
+        
+        const result = getFirstNumberValue / getSecondNumberValue;
+        document.querySelector("#result").textContent = result;
+
+        document.querySelector("#first_number").value = "";
+        document.querySelector("#second_number").value = "";
+      }
+    </script>
+  </body>
+</html>
