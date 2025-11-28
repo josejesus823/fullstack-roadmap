@@ -1,0 +1,13 @@
+/*
+19. Check if Integer is Within 20 of 100 or 400
+Write a JavaScript program to check whether a given integer is within 20 of 100 or 400. 
+*/
+
+function checkPostivieAndNegativeNumbers(number1, number2){
+    if((number1 < 0 && number2 > 0) || (number2 < 0 && number1 > 0)){
+        return true;
+    }
+    else return false;
+}
+
+console.log(checkPostivieAndNegativeNumbers(-3, 2));
