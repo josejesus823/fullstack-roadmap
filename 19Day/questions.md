@@ -1,4 +1,4 @@
-# Preguntas
+#Preguntas
 1. Un set puede tener valores repetidos? -> Falso, es una collecion de valores unicos y cada valor puede ocurrir 1 sola vez
 2. Como puedo crear un set? -> con `new Set()` 
 3. Como puedo verificar que mi objeto set realmente sea un set -> usando el metodo `instanceof Set`
